@@ -11,13 +11,7 @@ class AmbulanceApp(QMainWindow):
 
         self.tabs = QTabWidget()
 
-        self.calls_tab = QWidget()
-        self.calls_table = QTableWidget()
-        self.calls_table.setColumnCount(3)
-        self.calls_table.setHorizontalHeaderLabels(["Адрес", "Количество пострадавших", "ФИО"])
-        self.calls_tab_layout = QVBoxLayout()
-        self.calls_tab_layout.addWidget(self.calls_table)
-        self.calls_tab.setLayout(self.calls_tab_layout)
+
 
         self.stations_tab = QWidget()
         self.stations_table = QTableWidget()
